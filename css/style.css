@@ -1,0 +1,21 @@
+@import "tailwindcss"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Pacifico";
+    src: url("/fonts/Pacifico-Regular.ttf") format("opentype"); /* O 'woff', 'woff2', etc. según el formato */
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+html {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
