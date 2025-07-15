@@ -10,6 +10,7 @@ tailwind.config = {
         "primary-hover": "#EC4899", // Hover para botón rosa
         footer: "#FBCFE8", // Rosa claro del footer
         "svg-decor": "#fad0e9", // Curvas decorativas
+        "pink-soft": "#FBCFE8", // Rosa pastel suave
         "blue-soft": "#7fcacd", // Azul pastel claro
         "blue-very-soft": "#99e4e7", // Azul muy muy claro
       },
