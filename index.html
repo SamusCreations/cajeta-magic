@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cajeta Magic | Handcrafted Cajeta Sweets</title>
+    <title>Cajeta Magic | Lovely Cajeta Sweets</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   </head>
   <body class="bg-primary text-white max-w-6xl mx-auto">
@@ -16,12 +16,15 @@
       class="fixed top-0 left-0 right-0 z-50 fadeIn-on-scroll opacity-0 md:hidden transition-colors duration-300"
       style="background: transparent"
     >
-      <nav
-        class="mx-auto flex items-center justify-between px-4 py-2 text-offWhite"
-      >
-        <div class="flex items-center">
+      <nav class="mx-auto flex items-center justify-between p-4 text-offWhite">
+        <div class="flex items-center justify-evenly">
+          <img
+            src="images/favicon.png"
+            alt="Cajeta Magic Logo"
+            class="w-12 h-12 object-contain mx-auto"
+          />
           <span
-            class="font-heading text-3xl text-heading tracking-tight text-white"
+            class="font-heading text-4xl text-heading tracking-tight text-white"
             >Cajeta Magic</span
           >
         </div>
@@ -51,14 +54,23 @@
       <!-- Mobile menu -->
       <div
         id="mobileMenu"
-        class="hidden md:hidden fixed inset-0 z-10 uppercase text-text transition-transform duration-300 transform translate-x-full text-xl animate-slideIn"
+        class="hidden md:hidden fixed inset-0 z-10 text-white transition-transform duration-300 transform translate-x-full text-xl animate-slideIn"
       >
-        <div class="fixed inset-0 z-10 bg-gray-900 opacity-50"></div>
         <div
-          class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-primary px-6 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 rounded-l-3xl shadow-xl"
+          class="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-primary p-4 sm:max-w-sm"
         >
           <div class="flex items-center justify-between">
-            <span class="font-heading text-2xl text-heading">Cajeta Magic</span>
+            <div class="flex items-center justify-evenly">
+              <img
+                src="images/favicon.png"
+                alt="Cajeta Magic Logo"
+                class="w-12 h-12 object-contain mx-auto"
+              />
+              <span
+                class="font-heading text-4xl text-heading tracking-tight text-white"
+                >Cajeta Magic</span
+              >
+            </div>
             <button
               id="closeMenuBtn"
               type="button"
@@ -66,7 +78,7 @@
             >
               <span class="sr-only">Close menu</span>
               <svg
-                class="h-6 w-6 text-primary"
+                class="h-6 w-6 text-blue-soft"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
@@ -83,27 +95,31 @@
           <div class="mt-8 space-y-4">
             <a
               href="#home"
-              class="block rounded-xl px-4 py-3 font-heading text-lg text-heading bg-white/80 hover:bg-primary hover:text-white transition"
+              class="block p-2 font-heading text-2xl bg-primary hover:text-heading hover:bg-white/80 text-white hover:rounded-xl transition"
               >Home</a
             >
+            <hr class="border-t border-white mx-2" />
             <a
               href="#products"
-              class="block rounded-xl px-4 py-3 font-heading text-lg text-heading bg-white/80 hover:bg-primary hover:text-white transition"
+              class="block p-2 font-heading text-2xl bg-primary hover:text-heading hover:bg-white/80 text-white hover:rounded-xl transition"
               >Products</a
             >
+            <hr class="border-t border-white mx-2" />
             <a
               href="#about"
-              class="block rounded-xl px-4 py-3 font-heading text-lg text-heading bg-white/80 hover:bg-primary hover:text-white transition"
+              class="block p-2 font-heading text-2xl bg-primary hover:text-heading hover:bg-white/80 text-white hover:rounded-xl transition"
               >About</a
             >
+            <hr class="border-t border-white mx-2" />
             <a
               href="#faq"
-              class="block rounded-xl px-4 py-3 font-heading text-lg text-heading bg-white/80 hover:bg-primary hover:text-white transition"
+              class="block p-2 font-heading text-2xl bg-primary hover:text-heading hover:bg-white/80 text-white hover:rounded-xl transition"
               >FAQ</a
             >
+            <hr class="border-t border-white mx-2" />
             <a
               href="#contact"
-              class="block rounded-xl px-4 py-3 font-heading text-lg text-heading bg-white/80 hover:bg-primary hover:text-white transition"
+              class="block p-2 font-heading text-2xl bg-primary hover:text-heading hover:bg-white/80 text-white hover:rounded-xl transition"
               >Contact</a
             >
           </div>
@@ -138,7 +154,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="relative min-h-svh flex items-center justify-center bg-primary text-text px-4 py-24 sm:py-32 lg:px-8 overflow-hidden"
+      class="relative min-h-svh flex items-center justify-center bg-primary text-text px-4 py-16 sm:py-32 lg:px-8 overflow-hidden"
     >
       <!-- Blob SVG como fondo en la esquina superior derecha, oculto 50% -->
       <img
@@ -154,20 +170,20 @@
         <!-- Texto -->
         <div class="flex-1 flex items-center justify-center">
           <div
-            class="w-full flex flex-col items-center md:items-start justify-center text-center md:text-left"
+            class="w-full flex flex-col items-center md:items-start justify-start text-center md:text-left"
           >
-            <h1
-              class="font-heading text-4xl lg:text-6xl text-heading drop-shadow-lg text-white my-4"
-            >
-              The Sweet Magic of Cajeta!
-            </h1>
-            <p class="mt-2 text-lg lg:text-2xl font-sans max-w-xl text-white">
+            <img
+              src="images/logo-white.png"
+              alt="Cajeta Magic Logo"
+              class="w-40 h-40 sm:w-52 sm:h-52 md:w-44 md:h-44 object-contain mx-auto"
+            />
+            <p class="text-lg lg:text-2xl font-sans max-w-xl text-white">
               Discover handcrafted cajeta sweets made with tradition, love, and
-              a magical twist. Taste the difference in every bite.
+              a magical twist. Taste the difference in every bite!
             </p>
             <a
               href="#products"
-              class="mt-6 px-8 py-4 text-primary bg-white font-heading text-xl rounded-full shadow-lg hover:bg-primary hover:text-white transition"
+              class="my-2 px-8 py-4 text-primary bg-white font-heading text-xl rounded-full shadow-lg hover:bg-primary hover:text-white transition"
               >View Products</a
             >
           </div>
@@ -199,7 +215,7 @@
           A magical selection of cajeta treats for every occasion.
         </p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-2 gap-8">
         <!-- Ingredient Card 1 -->
         <div class="flex flex-col items-center">
           <div
@@ -281,7 +297,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Product Card 1 -->
         <div
-          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0"
+          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0 my-6"
         >
           <div class="w-full flex justify-center z-20">
             <img
@@ -341,7 +357,7 @@
 
         <!-- Product Card 2 -->
         <div
-          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0"
+          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0 my-6"
         >
           <div class="w-full flex justify-center z-20">
             <img
@@ -400,7 +416,7 @@
         </div>
         <!-- Product Card 3 -->
         <div
-          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0"
+          class="relative flex flex-col items-center fadeIn-on-scroll opacity-0 my-6"
         >
           <div class="w-full flex justify-center z-20">
             <img
@@ -461,13 +477,22 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-primary px-4 py-16 sm:py-24 lg:px-8">
+    <section id="about" class="bg-white px-4 py-16 sm:py-24 lg:px-8">
       <div
-        class="max-w-3xl mx-auto text-center rounded-3xl bg-white p-8 shadow-xl fadeIn-on-scroll opacity-0"
+        class="flex flex-col items-center max-w-3xl mx-auto text-center p-8 fadeIn-on-scroll"
       >
         <h2 class="font-heading text-4xl md:text-5xl text-heading mb-4">
-          About Us
+          How we made our Magical Cajetas?
         </h2>
+        <div
+          class="rounded-full aspect-square w-48 sm:w-56 md:w-52 bg-blue-soft border-8 border-blue-soft flex items-center justify-center fadeIn-on-scroll opacity-0 my-6"
+        >
+          <img
+            src="images/cajeta-shaper.png"
+            alt="Classic Cajeta"
+            class="rounded-full w-full h-full object-cover aspect-square"
+          />
+        </div>
         <p class="font-sans text-lg text-gray-700 mb-4">
           Cajeta Magic was born from a passion for tradition and a love for
           sweets. With years of experience, we craft each treat by hand, using
@@ -481,47 +506,30 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="bg-white px-4 py-16 sm:py-24 lg:px-8">
+    <section id="faq" class="bg-primary px-4 py-16 sm:py-24 lg:px-8">
       <div class="max-w-3xl mx-auto">
         <h2
-          class="font-heading text-4xl md:text-5xl text-heading text-center mb-8"
+          class="font-heading text-4xl md:text-5xl text-white text-center mb-8"
         >
-          Frequently Asked Questions
+          How we packed our Cajetas?
         </h2>
-        <div class="space-y-6">
+        <div
+          class="flex flex-col items-center max-w-3xl mx-auto text-center p-8 fadeIn-on-scroll"
+        >
+          <h3 class="font-heading text-2xl text-white mb-2">What is cajeta?</h3>
           <div
-            class="bg-primary rounded-2xl p-6 shadow fadeIn-on-scroll opacity-0"
+            class="rounded-full aspect-square w-48 sm:w-56 md:w-52 bg-blue-soft border-8 border-blue-soft flex items-center justify-center fadeIn-on-scroll opacity-0 my-6"
           >
-            <h3 class="font-heading text-2xl text-white mb-2">
-              What is cajeta?
-            </h3>
-            <p class="font-sans text-white">
-              Cajeta is a traditional Mexican caramel made from goat's milk,
-              known for its creamy texture and rich flavor.
-            </p>
+            <img
+              src="images/cajeta-shaper.png"
+              alt="Classic Cajeta"
+              class="rounded-full w-full h-full object-cover aspect-square"
+            />
           </div>
-          <div
-            class="bg-primary rounded-2xl p-6 shadow fadeIn-on-scroll opacity-0"
-          >
-            <h3 class="font-heading text-2xl text-white mb-2">
-              Do you offer delivery?
-            </h3>
-            <p class="font-sans text-white">
-              Yes! We deliver throughout the country. Contact us for more
-              details.
-            </p>
-          </div>
-          <div
-            class="bg-primary rounded-2xl p-6 shadow fadeIn-on-scroll opacity-0"
-          >
-            <h3 class="font-heading text-2xl text-white mb-2">
-              Are your products gluten-free?
-            </h3>
-            <p class="font-sans text-white">
-              Most of our products are gluten-free. Please check each product
-              description or ask us directly.
-            </p>
-          </div>
+          <p class="font-sans text-white">
+            Cajeta is a traditional Mexican caramel made from goat's milk, known
+            for its creamy texture and rich flavor.
+          </p>
         </div>
       </div>
     </section>
