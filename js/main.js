@@ -114,3 +114,26 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(element);
   });
 });
+
+// Navbar background change on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.getElementById("mainHeader");
+        const navWrapper = document.getElementById("navWrapper");
+        const hero = document.getElementById("home");
+        function setNavbarBg() {
+          const heroRect = hero.getBoundingClientRect();
+          if (heroRect.bottom <= 0) {
+            header.style.background = "#F472B6";
+            header.classList.add("shadow-lg");
+            navWrapper.style.background = "#F472B6";
+            navWrapper.classList.add("shadow-lg");
+          } else {
+            header.style.background = "transparent";
+            header.classList.remove("shadow-lg");
+            navWrapper.style.background = "transparent";
+            navWrapper.classList.remove("shadow-lg");
+          }
+        }
+        window.addEventListener("scroll", setNavbarBg);
+        setNavbarBg();
+      });
